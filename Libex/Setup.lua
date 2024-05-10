@@ -12,7 +12,7 @@ local IsFile = isfile or syn_isfile or is_file or nil
 for i,v in pairs(tbl) do
     if (WriteFile and IsFile) then
         if not IsFile("Y-hub/Assets/"..v..".png") then
-            local url = "https://raw.githubusercontent.com/Woutt/Y-hub/main/Libex/Assets/"..v..".png"
+            local url = "https://raw.githubusercontent.com/Woutt/Scryptiq/main/Libex/Assets/"..v..".png"
             WriteFile("Y-hub/Assets/"..v..".png", game:HttpGet(url))
         end
     end
